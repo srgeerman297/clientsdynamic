@@ -1,0 +1,10 @@
+{
+  "name": "client-portfolio-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Editable static client portfolio dashboard by industry, location, and services.",
+  "scripts": {
+    "start": "python3 -m http.server 4173 --bind 0.0.0.0",
+    "check": "python3 -m json.tool data/clients.json >/tmp/clients.json.pretty && node --check src/app.js"
+  }
+}

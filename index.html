@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Client Portfolio Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar" aria-label="Dashboard navigation">
+      <div class="brand">
+        <span class="brand-icon" aria-hidden="true">🤝</span>
+        <div>
+          <strong>CLIENT</strong>
+          <strong>DASHBOARD</strong>
+          <small>Portfolio by market</small>
+        </div>
+      </div>
+      <nav class="nav-list">
+        <a class="nav-item active" href="#overview"><span>◉</span>Overview</a>
+        <a class="nav-item" href="#industries"><span>🏢</span>Industries</a>
+        <a class="nav-item" href="#locations"><span>📍</span>Locations</a>
+        <a class="nav-item" href="#services"><span>🧰</span>Services</a>
+        <a class="nav-item" href="#clients"><span>👥</span>Clients</a>
+      </nav>
+      <a class="settings" href="data/clients.json"><span>⚙</span>Edit JSON</a>
+    </aside>
+
+    <main class="dashboard" id="overview">
+      <header class="hero-card">
+        <div>
+          <p class="eyebrow">Client Intelligence</p>
+          <h1>Client Portfolio Dashboard</h1>
+          <p>Overview of clients by industry, location, and services delivered.</p>
+        </div>
+        <form class="filters" aria-label="Dashboard filters">
+          <label>
+            <span>Industry</span>
+            <select id="industryFilter"><option value="all">All</option></select>
+          </label>
+          <label>
+            <span>Location</span>
+            <select id="locationFilter"><option value="all">All</option></select>
+          </label>
+          <label>
+            <span>Service</span>
+            <select id="serviceFilter"><option value="all">All</option></select>
+          </label>
+        </form>
+      </header>
+
+      <section class="metric-grid" aria-label="Client metrics">
+        <article class="metric-card blue">
+          <span class="metric-icon">👥</span>
+          <p>Total Clients</p>
+          <strong id="totalClients">0</strong>
+          <small id="activeClients">0 active relationships</small>
+        </article>
+        <article class="metric-card teal">
+          <span class="metric-icon">🏢</span>
+          <p>Industries</p>
+          <strong id="industryCount">0</strong>
+          <small>Markets represented</small>
+        </article>
+        <article class="metric-card orange">
+          <span class="metric-icon">🌎</span>
+          <p>Countries</p>
+          <strong id="countryCount">0</strong>
+          <small>Global footprint</small>
+        </article>
+        <article class="metric-card purple">
+          <span class="metric-icon">🧰</span>
+          <p>Services</p>
+          <strong id="serviceCount">0</strong>
+          <small>Capabilities delivered</small>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel wide" id="industries">
+          <div class="panel-heading">
+            <h2>Clients by Industry</h2>
+            <span id="industryTotal"></span>
+          </div>
+          <div class="divider"></div>
+          <div class="bar-list" id="industryBars"></div>
+        </article>
+
+        <article class="panel" id="locations">
+          <div class="panel-heading">
+            <h2>Clients by Location</h2>
+          </div>
+          <div class="divider"></div>
+          <div class="donut-wrap">
+            <svg id="locationDonut" viewBox="0 0 220 220" role="img" aria-labelledby="locationChartTitle">
+              <title id="locationChartTitle">Clients by location donut chart</title>
+            </svg>
+            <div class="donut-center"><strong id="donutTotal">0</strong><span>Clients</span></div>
+          </div>
+          <ul class="legend" id="locationLegend"></ul>
+        </article>
+
+        <article class="panel" id="services">
+          <div class="panel-heading">
+            <h2>Services Delivered</h2>
+          </div>
+          <div class="divider"></div>
+          <div class="service-cloud" id="serviceCloud"></div>
+        </article>
+      </section>
+
+      <section class="panel clients-panel" id="clients">
+        <div class="panel-heading">
+          <h2>Client Directory</h2>
+          <span id="clientResultCount"></span>
+        </div>
+        <div class="divider"></div>
+        <div class="client-grid" id="clientGrid"></div>
+      </section>
+    </main>
+
+    <template id="clientCardTemplate">
+      <article class="client-card">
+        <div class="client-card-header">
+          <h3></h3>
+          <span class="status-pill"></span>
+        </div>
+        <p class="client-meta"></p>
+        <div class="chip-list"></div>
+      </article>
+    </template>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
