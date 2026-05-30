@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Axioma Health",
+    "industry": "Healthcare",
+    "location": { "city": "Austin", "state": "TX", "country": "United States", "region": "North America" },
+    "services": ["Web App", "CRM Integration", "Automation"],
+    "status": "Active",
+    "since": "2022-02-15"
+  },
+  {
+    "name": "Northstar Finance",
+    "industry": "Financial Services",
+    "location": { "city": "New York", "state": "NY", "country": "United States", "region": "North America" },
+    "services": ["Dashboard", "Data Analytics", "Cloud Hosting"],
+    "status": "Active",
+    "since": "2021-08-10"
+  },
+  {
+    "name": "GreenGrid Energy",
+    "industry": "Energy",
+    "location": { "city": "Denver", "state": "CO", "country": "United States", "region": "North America" },
+    "services": ["Website", "SEO", "Maintenance"],
+    "status": "Active",
+    "since": "2023-05-03"
+  },
+  {
+    "name": "Harbor Retail Group",
+    "industry": "Retail",
+    "location": { "city": "London", "state": "England", "country": "United Kingdom", "region": "Europe" },
+    "services": ["E-commerce", "UX Design", "Automation"],
+    "status": "Active",
+    "since": "2020-11-18"
+  },
+  {
+    "name": "BluePeak Logistics",
+    "industry": "Logistics",
+    "location": { "city": "Dubai", "state": "Dubai", "country": "United Arab Emirates", "region": "Middle East" },
+    "services": ["Operations Dashboard", "API Integration", "Support"],
+    "status": "Active",
+    "since": "2022-09-21"
+  },
+  {
+    "name": "BrightPath Education",
+    "industry": "Education",
+    "location": { "city": "Toronto", "state": "ON", "country": "Canada", "region": "North America" },
+    "services": ["Learning Portal", "Web App", "Maintenance"],
+    "status": "Active",
+    "since": "2023-01-12"
+  },
+  {
+    "name": "Cedar Legal Partners",
+    "industry": "Legal",
+    "location": { "city": "Chicago", "state": "IL", "country": "United States", "region": "North America" },
+    "services": ["Website", "CRM Integration", "SEO"],
+    "status": "Active",
+    "since": "2021-04-27"
+  },
+  {
+    "name": "Summit Manufacturing",
+    "industry": "Manufacturing",
+    "location": { "city": "Bangalore", "state": "Karnataka", "country": "India", "region": "Asia Pacific" },
+    "services": ["ERP Integration", "Data Analytics", "Automation"],
+    "status": "Active",
+    "since": "2022-12-01"
+  },
+  {
+    "name": "Vista Hospitality",
+    "industry": "Hospitality",
+    "location": { "city": "Singapore", "state": "Central", "country": "Singapore", "region": "Asia Pacific" },
+    "services": ["Booking Platform", "UX Design", "Cloud Hosting"],
+    "status": "Active",
+    "since": "2020-06-14"
+  },
+  {
+    "name": "Pulse Media Co.",
+    "industry": "Media",
+    "location": { "city": "Los Angeles", "state": "CA", "country": "United States", "region": "North America" },
+    "services": ["Brand Site", "Content Strategy", "SEO"],
+    "status": "Active",
+    "since": "2024-03-06"
+  },
+  {
+    "name": "Oakline Real Estate",
+    "industry": "Real Estate",
+    "location": { "city": "Miami", "state": "FL", "country": "United States", "region": "North America" },
+    "services": ["Property Portal", "CRM Integration", "Support"],
+    "status": "Paused",
+    "since": "2019-10-09"
+  },
+  {
+    "name": "Everwell Nonprofit",
+    "industry": "Nonprofit",
+    "location": { "city": "Berlin", "state": "Berlin", "country": "Germany", "region": "Europe" },
+    "services": ["Donation Platform", "Website", "Data Analytics"],
+    "status": "Active",
+    "since": "2023-07-24"
+  }
+]
