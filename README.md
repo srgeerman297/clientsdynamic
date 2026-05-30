@@ -4,13 +4,21 @@ A lightweight, editable HTML dashboard for visualizing clients by industry, loca
 
 ## Run locally
 
-Because this is a static site, you can serve it with any local web server:
+Because this is a static site, serve the repository folder and open the local URL:
 
 ```bash
-python3 -m http.server 4173
+npm start
 ```
 
 Then open <http://localhost:4173>.
+
+If you do not want to use npm, this equivalent command works too:
+
+```bash
+python3 -m http.server 4173 --bind 0.0.0.0
+```
+
+Do not double-click `index.html`; the dashboard fetches `data/clients.json`, so it needs to be served over HTTP.
 
 ## Edit clients
 
